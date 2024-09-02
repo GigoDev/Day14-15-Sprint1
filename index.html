@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="onInit()">
+    <div class="gamePanel" oncontextmenu="return false;">
+        <div class="difficulty">
+            <button class="btn1" onclick="onSetDifficulty('Easy')">Easy</button>
+            <button class="btn2" onclick="onSetDifficulty('Medium')">Medium</button>
+            <button class="btn3" onclick="onSetDifficulty('Hard')">Hard</button>
+        </div>
+        <div class="scoreBoard">
+            <div class="timer score">time:<span></span></div>
+            <div class="reset" onclick="onInit()"></div>
+            <div class="flagsCount score">flags:<span></span></div>
+        </div>
+
+        <table>
+            <div class="modal"> <button onclick="onInit()">play agian</button> </div>
+            <tbody class="board"></tbody>
+        </table>
+        <div class="icons">
+            <div class="lives"></div>
+            <div class="hints">
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/utils.js"></script>
+</body>
+
+<footer>Guy Geffen</footer>
+
+
+</html>

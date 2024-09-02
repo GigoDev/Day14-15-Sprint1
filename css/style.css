@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.gamePanel {
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+
+  background: linear-gradient(#e66465, #9198e5);
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+table {
+}
+
+td {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: larger;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+td:hover {
+  background-color: #F0E68C;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+
+  padding: 1em;
+
+  background-color: #D8BFD8;
+  border: 0.01em solid black;
+
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 1em;
+
+  background-color: #CF1020;
+  border: 0.1em solid black;
+  text-align: center;
+  font-size: 2em;
+}
+
+.difficulty {
+  display: flex;
+  margin-top: 1em;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.lives {
+  width: 150px;
+  margin: auto;
+  font-size: 2em;
+}
+
+.hints {
+  width: 150px;
+  margin: auto;
+}
+
+.hint {
+  font-size: 2em;
+  cursor: pointer;
+  filter: hue-rotate(175deg);
+}
+
+button {
+  /* margin: auto; */
+  margin: 5px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.show {
+  background-color: lightblue;
+}
